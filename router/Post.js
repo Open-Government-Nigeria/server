@@ -1,0 +1,1 @@
+const express = require("express");const router = express.Router();const {createPost, getUserPosts} = require("../controllers/PostController");const AuthenticatedUser = require("../middleware/AuthenticatedUser");router.post('/create-post', AuthenticatedUser, createPost)router.get('/user-posts/:userId', AuthenticatedUser, getUserPosts)module.exports = router;

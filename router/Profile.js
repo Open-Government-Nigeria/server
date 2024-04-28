@@ -1,0 +1,1 @@
+const express = require("express")const profile = express.Router()const {getAllUsers, getPersonalProfile} = require("../controllers/ProfileController")const CheckAdmin = require("../middleware/CheckAdmin")profile.get('/all-users', CheckAdmin, getAllUsers)profile.get('/user', getPersonalProfile)module.exports = profile;
