@@ -1,0 +1,1 @@
+module.exports = {    languageOptions: {        ecmaVersion: 2021,        sourceType: "module",        globals: {            Atomics: "readonly",            SharedArrayBuffer: "readonly",        },    },    rules: {        // Include the rules from "eslint:recommended" here    },};
